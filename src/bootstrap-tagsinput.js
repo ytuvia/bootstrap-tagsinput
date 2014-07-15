@@ -268,7 +268,7 @@
 
             this.map = {};
             var map = this.map,
-                data = typeahead.source(query);
+                data = typeahead.source(query, process);
 
             if ($.isFunction(data.success)) {
               // support for Angular promises
